@@ -3,20 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Coffee Blog</h1>
-        <p>Coffee Blog with tips and courses</p>
-        <p>learn from the experts with the best recipes and tips</p>
+    <header class="site-init">
+        <div class="bar">
+            <h1>Coffee Blog</h1>
+            <nav class="menu">
+                <a href="about.html" target="_self">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <p class="hl-text">Our Coffee Blog with tips and courses</p>
+        <p>Learn from our experts with the best recipes and tips</p>
     </header>
 
-    <main>
+    <main class="container">
         <h2>Our Blog</h2>
-        <div>
-            <h3>Coffee bean type</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt perferendis quibusdam, a omnis rerum magnam dolorem atque, doloribus nihil mollitia voluptatibus ut enim quasi sunt et? Velit, iure ab?</p>
-        </div>
+        <div class="main-flex-container">
+            <div class="blog-container">
+                <div class="blog-item">
+                    <img src="./img/blog1.jpg" alt="cofee element">
+                    <h3>Coffee bean type</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt perferendis quibusdam, a omnis rerum magnam dolorem atque, doloribus nihil mollitia voluptatibus ut enim quasi sunt et? Velit, iure ab?</p>
+                    <a href="#" class="btn-read-more">Read More</a>
+                </div>
+                <div class="blog-item">
+                    <img src="./img/blog2.jpg" alt="cofee element">
+                    <h3>Coffee bean type</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt perferendis quibusdam, a omnis rerum magnam dolorem atque, doloribus nihil mollitia voluptatibus ut enim quasi sunt et? Velit, iure ab?</p>
+                    <a href="#" class="btn-read-more">Read More</a>
+                </div>
+            </div><!-- block-container -->
+            <section class="course-container">
+                <h2>Our Courses and Workshops</h2>
+                <div>
+                    <h3>Coffee Extraction Techniques</h3>
+                    <p>Price: Free</p>
+                    <p>Seat: 20</p>
+                    <a href="#">More Information</a>
+                </div>
+                <div>
+                    <h3>Coffee Extraction Techniques</h3>
+                    <p>Price: Free</p>
+                    <p>Seat: 20</p>
+                    <a href="#">More Information</a>
+                </div>
+            </section>
+        </div><!-- main-flex-container -->
+    </main>
+
 </body>
 </html>
