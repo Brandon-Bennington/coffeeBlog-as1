@@ -89,8 +89,11 @@ header.site-init .hl-text{
     margin-top: 20px;
 }
 
-.course-container{
+.course-container {
     width: 35%;
+    display: flex; /* Activate Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Or adjust as needed */
 }
 
 .blog-item {
@@ -110,4 +113,64 @@ header.site-init .hl-text{
 .blog-item p {
     text-align: left; 
     max-width: 100; /* Match the image width */
+}
+
+/* Contact Form Styles */
+.contact-form { 
+    margin-top: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"], 
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button[type="submit"] {
+     background-color: black; 
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     cursor: pointer;
+}
+
+/* Course Grid Styles */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */ 
+    gap: 20px;
+ }
+ 
+ .course-item {
+     border: 1px solid #ccc;
+     padding: 20px;
+ } 
+
+ /* About Us Tease */
+.about-tease {
+    background-color: #f9f9f9; /* Or a color of your choice */
+    padding: 30px 0; 
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 30px 0; 
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
 }
